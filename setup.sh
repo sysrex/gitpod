@@ -3,6 +3,9 @@ if [ "$NO_ZSH" != "true" ]; then
   # switch to zsh
   sudo apt install zsh -y
   sudo chsh gitpod -s "$(which zsh)"
+  
+  # Install Hack font to be used in terminal
+  sudo apt install fonts-hack-ttf
 
   # Fix GP alias
   echo "alias pod=/usr/bin/gp" >>~/.zshrc
